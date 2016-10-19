@@ -9,9 +9,8 @@ body {
     background-position: center center;
     min-height: 100%;
     margin: 0;
-    overflow: hidden;
     font-family: lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 32px;
+    font-size: 26px;
 }
 
 #containerPizza{
