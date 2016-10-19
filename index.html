@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose your PIZZA</title>
+    <link href="./style_7_1.css" rel="stylesheet" type="text/css"/>
+    <script src="Task_7_1.js">    </script>
+
+</head>
+<body>
+
+    <form name="pizzaOrder">
+        <div id="containerPizza">
+            <input type="radio" id="pizza_1" name="pizza" checked value="Pizza Royal" data-price="120" />
+            <img name ="imgPizza" src="pizza_1.png">
+            <input type="radio" id="pizza_2" name="pizza"  value="Pizza Vegetarian" data-price="76"/>
+            <img name="imgPizza" src="pizza_2.png" />
+            <input type="radio" id="pizza_3" name="pizza"  value="Pizza Italiano" data-price="90"/>
+            <img name="imgPizza" src="pizza_3.png" />
+            <input type="radio" id="pizza_4" name="pizza"  value="Pizza Meat Slice" data-price="86"/>
+            <img name="imgPizza" src="pizza_4.png" />
+            <input type="radio" id="pizza_5" name="pizza"  value="Pizza Ordinary" data-price="80"/>
+            <img name="imgPizza" src="pizza_5.png" />
+            <input type="radio" id="pizza_6" name="pizza"  value="Pizza Country" data-price="85"/>
+            <img name="imgPizza" src="pizza_6.png" />
+        </div>
+
+        <div id="containerForm">
+            <h2 id="pizzaName">Pizza Royal</h2>
+            <h1 id="price">80,00 grn</h1>
+                <h3>Select Pizza size:</h3>
+                <input type="radio" name="size" checked value="Small" data-price="0"/> Small
+                <input type="radio" name="size" value="Medium" data-price="10"/> Medium
+                <input type="radio" name="size" value="Large" data-price="20"/> Large
+                <h3>Select extras:</h3>
+                <input type="checkbox" name="extra" value="Mushrooms" data-price="11"/> Mushrooms
+                <input type="checkbox" name="extra" value="Becon" data-price="15"/> Becon
+                <input type="checkbox" name="extra" value="Tomatoes" data-price="10"/> Tomatoes<br>
+                <input type="checkbox" name="extra" value="Cheese" data-price="12"/> Cheese
+                <input type="checkbox" name="extra" value="Olivas" data-price="13"/> Olivas
+
+                <h3>Enter your Info:</h3>
+                Name: <input type="text" name="name" value="" required pattern="\w{3,20}" placeholder="Enter your name"/><br>
+                Phone: <input type="text" name="name" value="" required pattern="\+\d{11,15}" placeholder="Enter your phone +380559879898"/><br>
+                Address: <input type="text" name="name" value="" required pattern=".{3,50}" placeholder="Enter an address"/><br>
+                <br>
+                <input type="submit" value="Order a Pizza"/>
+        </div>
+    </form>
+</body>
+</html>
